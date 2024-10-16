@@ -1,0 +1,363 @@
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  padding: 20px 50px;
+  background-color: rgba(30, 30, 30, 0.7); /* Darker Header with transparency */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff; /* Logo color */
+}
+
+/* Navigation Styles */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  position: relative; /* For dropdown positioning */
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: #ffffff; /* Link color */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px; /* Padding for links */
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00bcd4; /* Accent color on hover */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #1e1e1e; /* Background for dropdown */
+  min-width: 160px; /* Set width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+  color: #ffffff; /* Link color in dropdown */
+  padding: 12px 16px; /* Padding for dropdown links */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #00bcd4; /* Background on hover */
+}
+
+/* Search Bar Styles */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 15px; /* Increased padding for bigger search bar */
+  border: none;
+  border-radius: 20px;
+  width: 300px; /* Wider search bar */
+  margin-right: 10px;
+}
+
+.search-container button {
+  background-color: #00bcd4; /* Button color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #00abc186; /* Darker button on hover */
+}
+
+/* More Button Styles */
+.more {
+  position: relative; /* For dropdown positioning */
+}
+
+.more-button {
+  color: #ffffff; /* Dot color */
+  font-size: 24px; /* Adjust size for visibility */
+  cursor: pointer;
+  margin-left: 10px; /* Space between search and more button */
+}
+
+/* More Dropdown Content */
+.more .dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #1e1e1e; /* Background for dropdown */
+  min-width: 160px; /* Set width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.more:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack items on small screens */
+    align-items: flex-start; /* Align items to start */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+  }
+
+  .search-container {
+    margin-top: 10px; /* Margin for search bar */
+  }
+
+  .search-container input {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+  
+
+.about-hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #2a2a2a;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+}
+
+.about-hero p {
+    font-size: 20px;
+    color: #cccccc;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.faq {
+    background-color: #2a2a2a;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #3a3a3a;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.3s ease;
+    background-color: #333;
+}
+
+.faq-answer p {
+    padding: 15px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.arrow {
+    font-size: 24px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    padding: 20px 50px;
+    background-color: rgba(30, 30, 30, 0.7); /* Darker Header with transparency */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff; /* Logo color */
+  text-decoration: none;
+}
+  
+  /* Navigation Styles */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+  
+nav ul li {
+  position: relative; /* For dropdown positioning */
+  margin-left: 30px;
+}
+  
+nav ul li a {
+  color: #ffffff; /* Link color */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px; /* Padding for links */
+  transition: color 0.3s ease;
+}
+  
+nav ul li a:hover {
+  color: #00bcd4; /* Accent color on hover */
+}
+  
+  /* Dropdown Menu Styles */
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #1e1e1e; /* Background for dropdown */
+  min-width: 160px; /* Set width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+  
+.dropdown-content a {
+  color: #ffffff; /* Link color in dropdown */
+  padding: 12px 16px; /* Padding for dropdown links */
+  text-decoration: none;
+  display: block;
+}
+  
+.dropdown-content a:hover {
+  background-color: #00bcd4; /* Background on hover */
+}
+  
+  /* Search Bar Styles */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+  
+.search-container input {
+  padding: 15px; /* Increased padding for bigger search bar */
+  border: none;
+  border-radius: 20px;
+  width: 300px; /* Wider search bar */
+  margin-right: 10px;
+}
+  
+.search-container button {
+  background-color: #00bcd4; /* Button color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+  
+.search-container button:hover {
+  background-color: #00abc186; /* Darker button on hover */
+}
+  
+  /* More Button Styles */
+.more {
+  position: relative; /* For dropdown positioning */
+}
+  
+.more-button {
+  color: #ffffff; /* Dot color */
+  font-size: 24px; /* Adjust size for visibility */
+  cursor: pointer;
+  margin-left: 10px; /* Space between search and more button */
+}
+  
+  /* More Dropdown Content */
+.more .dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #1e1e1e; /* Background for dropdown */
+  min-width: 160px; /* Set width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+  
+.more:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+  
+  /* Responsive Adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack items on small screens */
+    align-items: flex-start; /* Align items to start */
+    }
+  
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    }
+  
+  .search-container {
+    margin-top: 10px; /* Margin for search bar */
+    }
+  
+  .search-container input {
+    width: 100%; /* Full width on smaller screens */
+    }
+  }
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1e1e1e;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+  

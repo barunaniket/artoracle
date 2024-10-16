@@ -1,0 +1,248 @@
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 150px;
+}
+
+.contact-form-container {
+    width: 70%; /* Increased width */
+    background-image: url('389988.jpeg'); /* Add background image */
+    background-size: cover; /* Cover entire container */
+    background-position: center; /* Center the image */
+    padding: 60px 40px; /* Increased padding */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Drop shadow */
+}
+
+.contact-form-container h2 {
+    font-size: 48px; /* Increased font size */
+    margin-bottom: 40px; /* Increased margin */
+    text-align: center;
+    color: #ffffff; /* Text color */
+}
+
+/* Add a dark overlay to improve text readability */
+.contact-form-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    background-blend-mode: multiply;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+input, textarea {
+    width: 95%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+button[type="submit"] {
+    background-color: #00bcd4;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #00abc186;
+}
+
+.artoracle-logo-container {
+    width: 45%;
+    text-align: center;
+}
+
+.artoracle-logo-container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.artoracle-logo-container p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .contact-form-container, .artoracle-logo-container {
+        width: 100%;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    padding: 20px 50px;
+    background-color: rgba(30, 30, 30, 0.7); /* Darker Header with transparency */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff; /* Logo color */
+  text-decoration: none;
+}
+  
+  /* Navigation Styles */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+  
+nav ul li {
+  position: relative; /* For dropdown positioning */
+  margin-left: 30px;
+}
+  
+nav ul li a {
+  color: #ffffff; /* Link color */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px; /* Padding for links */
+  transition: color 0.3s ease;
+}
+  
+nav ul li a:hover {
+  color: #00bcd4; /* Accent color on hover */
+}
+  
+  /* Dropdown Menu Styles */
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #1e1e1e; /* Background for dropdown */
+  min-width: 160px; /* Set width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+  
+.dropdown-content a {
+  color: #ffffff; /* Link color in dropdown */
+  padding: 12px 16px; /* Padding for dropdown links */
+  text-decoration: none;
+  display: block;
+}
+  
+.dropdown-content a:hover {
+  background-color: #00bcd4; /* Background on hover */
+}
+  
+  /* Search Bar Styles */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+  
+.search-container input {
+  padding: 15px; /* Increased padding for bigger search bar */
+  border: none;
+  border-radius: 20px;
+  width: 300px; /* Wider search bar */
+  margin-right: 10px;
+}
+  
+.search-container button {
+  background-color: #00bcd4; /* Button color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+  
+.search-container button:hover {
+  background-color: #00abc186; /* Darker button on hover */
+}
+  
+  /* More Button Styles */
+.more {
+  position: relative; /* For dropdown positioning */
+}
+  
+.more-button {
+  color: #ffffff; /* Dot color */
+  font-size: 24px; /* Adjust size for visibility */
+  cursor: pointer;
+  margin-left: 10px; /* Space between search and more button */
+}
+  
+  /* More Dropdown Content */
+.more .dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #1e1e1e; /* Background for dropdown */
+  min-width: 160px; /* Set width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+  
+.more:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+  
+  /* Responsive Adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack items on small screens */
+    align-items: flex-start; /* Align items to start */
+    }
+  
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    }
+  
+  .search-container {
+    margin-top: 10px; /* Margin for search bar */
+    }
+  
+  .search-container input {
+    width: 100%; /* Full width on smaller screens */
+    }
+  }
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1e1e1e;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+  

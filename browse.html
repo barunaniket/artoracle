@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Art - ArtOracle</title>
+    <link rel="stylesheet" href="browse.css"> <!-- Link to your existing style.css -->
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">ArtOracle</a>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+              <a href="browse.html">Browse Art</a>
+              <div class="dropdown-content">
+                <a href="#">Digital Art</a>
+                <a href="#">Traditional Art</a>
+                <a href="#">Photography</a>
+                <a href="#">3D Art</a>
+              </div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li class="more dropdown">
+              <a href="#">More</a>
+              <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Billing</a>
+                <a href="#">Ideas</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search Art..." />
+            <button type="submit" id="search-button">🔍</button>
+        </div>        
+    </header>
+
+    <section class="browse-art">
+        <div class="tile digital-art">
+            <a href="digital-art.html">
+                <div class="category-name">Digital Art</div>
+            </a>
+        </div>
+
+        <div class="tile traditional-art">
+            <a href="traditional-art.html">
+                <div class="category-name">Traditional Art</div>
+            </a>
+        </div>
+
+        <div class="tile photography">
+            <a href="photography.html">
+                <div class="category-name">Photography</div>
+            </a>
+        </div>
+
+        <div class="tile d-art">
+            <a href="3d-art.html">
+                <div class="category-name">3D Art</div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ArtOracle. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

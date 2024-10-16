@@ -1,0 +1,325 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212; /* Dark Background */
+  color: #e0e0e0; /* Light text color */
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+    
+a {
+  text-decoration: none;
+  color: #00bcd4; /* Accent Color for Links */
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  padding: 20px 50px;
+  background-color: rgba(30, 30, 30, 0.7); /* Darker Header with transparency */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff; /* Logo color */
+}
+
+/* Navigation Styles */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  position: relative; /* For dropdown positioning */
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: #ffffff; /* Link color */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px; /* Padding for links */
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00bcd4; /* Accent color on hover */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #1e1e1e; /* Background for dropdown */
+  min-width: 160px; /* Set width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+  color: #ffffff; /* Link color in dropdown */
+  padding: 12px 16px; /* Padding for dropdown links */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #00bcd4; /* Background on hover */
+}
+
+/* Search Bar Styles */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 15px; /* Increased padding for bigger search bar */
+  border: none;
+  border-radius: 20px;
+  width: 300px; /* Wider search bar */
+  margin-right: 10px;
+}
+
+.search-container button {
+  background-color: #00bcd4; /* Button color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #00abc186; /* Darker button on hover */
+}
+
+/* More Button Styles */
+.more {
+  position: relative; /* For dropdown positioning */
+}
+
+.more-button {
+  color: #ffffff; /* Dot color */
+  font-size: 24px; /* Adjust size for visibility */
+  cursor: pointer;
+  margin-left: 10px; /* Space between search and more button */
+}
+
+/* More Dropdown Content */
+.more .dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #1e1e1e; /* Background for dropdown */
+  min-width: 160px; /* Set width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.more:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack items on small screens */
+    align-items: flex-start; /* Align items to start */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+  }
+
+  .search-container {
+    margin-top: 10px; /* Margin for search bar */
+  }
+
+  .search-container input {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+  
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('your-featured-art-image.jpg') no-repeat center center/cover;
+  filter: blur(30px);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.hero h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.hero p {
+  font-size: 28px;
+  color: #ffffffc2;
+  margin-bottom: 30px;
+  z-index: 1;
+}
+
+.cta-button {
+  padding: 15px 40px;
+  background-color: #00bcd4;
+  color: #121212;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.cta-button:hover {
+  background-color: #00acc1; /* Slightly darker on hover */
+}
+
+.nav-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .prev-arrow, .next-arrow {
+    background-color: rgba(0, 0, 0, 0.226);
+    color: #fff;
+    border: none;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .prev-arrow:hover, .next-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+/* Featured Art Section */
+/* Featured Art Section */
+.featured-art {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 20px;
+  padding: 60px 50px;
+  background-color: #1c1c1c;
+}
+
+/* Art Pieces */
+.art-piece {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.art-piece img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.art-piece:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.art-piece:hover img {
+  transform: scale(1.05); /* Zoom in slightly */
+}
+
+/* Discover More Card */
+.discover-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #333; /* Dark background for the Discover More card */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.discover-more a {
+  color: #00bcd4;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.discover-more:hover {
+  background-color: #444; /* Slightly lighter on hover */
+}
+
+.discover-more a:hover {
+  color: #ffffff; /* Change text color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .featured-art {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-art {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for even smaller screens */
+  }
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1e1e1e;
+  color: #b0b0b0;
+  font-size: 14px;
+}

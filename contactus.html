@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ArtOracle</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">ArtOracle</a>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+              <a href="browse.html">Browse Art</a>
+              <div class="dropdown-content">
+                <a href="#">Digital Art</a>
+                <a href="#">Traditional Art</a>
+                <a href="#">Photography</a>
+                <a href="#">3D Art</a>
+              </div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li class="more dropdown">
+              <a href="#">More</a>
+              <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Billing</a>
+                <a href="#">Ideas</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search Art..." />
+            <button type="submit" id="search-button">🔍</button>
+        </div>        
+    </header>
+
+    <section class="contact-container">
+        <div class="contact-form-container">
+            <h2>Get in Touch</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Contact No:</label>
+                    <input type="number" id="number" name="number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="artoracle-logo-container">
+            <h1 class="logo">ArtOracle</h1>
+            <p>"Empowering Art, Enhancing Lives"</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ArtOracle. All rights reserved.</p>
+    </footer>
+</body>
+</html>
